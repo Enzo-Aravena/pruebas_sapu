@@ -8,23 +8,29 @@ let contadorCarga = 0;
 let msj = "";
 let Fn = {
     validaRut: function(buscar) {
-        buscar = buscar.replace("‐", "-");
-        if (!/^[0-9]{1,8}[-|‐]{1}[0-9kK]{1}$/.test(buscar) && !/^[1-9]{1}[0-9]{8}$/.test(buscar) && !/^[1-9]{1}[0-9]{9}$/.test(buscar) && !/^[1-9]{1}[0-9]{10}$/.test(buscar))
-            return false;
-        var tmp = buscar.split('-');
-        var digv = tmp[1];
-        var rut = tmp[0];
-        if (digv == 'K') digv = 'k';
+      buscar = buscar.replace("‐", "-");
+      if (buscar.length === 11 && buscar.startsWith("100")) {
+        return true;
+      }
+      if (!/^[0-9]{1,8}[-|‐]{1}[0-9kK]{1}$/.test(buscar) && !/^[1-9]{1}[0-9]{8}$/.test(buscar) && !/^[1-9]{1}[0-9]{9}$/.test(buscar) && !/^[1-9]{1}[0-9]{10}$/.test(buscar))
+        return false;
+      var tmp = buscar.split('-');
+      var digv = tmp[1];
+      var rut = tmp[0];
+      if (digv == 'K') digv = 'k';
+      if (rut.length < 10) {
         return (Fn.dv(rut) == digv);
+      }
+      return true;
     },
     dv: function(T) {
-        var M = 0,
-            S = 1;
-        for (; T; T = Math.floor(T / 10))
-            S = (S + T % 10 * (9 - M++ % 6)) % 11;
-        return S ? S - 1 : 'k';
+      var M = 0,
+        S = 1;
+      for (; T; T = Math.floor(T / 10))
+        S = (S + T % 10 * (9 - M++ % 6)) % 11;
+      return S ? S - 1 : 'k';
     }
-}
+  };
 
 
 $(document).ready(function() {

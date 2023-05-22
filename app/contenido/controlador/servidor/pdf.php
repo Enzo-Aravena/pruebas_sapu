@@ -34,7 +34,7 @@
                 }
             </style>';
 
-
+    
 
     if ($data[0]["data"] == "0") { 
         echo "Error Al generar Archivo PDF, Favor contactarse con el equipo informatica salud.";
@@ -351,7 +351,7 @@
                     $code .='<div style=" margin-left: 0; margin-right: 0;">';
 
                     //VALIDA EL NOMBRE DEL REPRESENTANTE
-
+                                            
                     $hoy = Date('Y');
                     $edad = explode("/", $valor["FECHA_NACIMIENTO"]);
                     $calcEdad = $hoy - $edad[2];
@@ -1016,7 +1016,7 @@
             echo '<pre>',print_r($e),'</pre>';
         } 
 
-
+ 
        echo $code;
 
     }//END ELSE

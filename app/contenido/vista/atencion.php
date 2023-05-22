@@ -123,7 +123,7 @@
 									<tr><label><b style="color:black; font-size:large;">Triage Paciente</b></label></tr>
 									<tr>
 										<label><b style="margin-left:300px !important; color:black; font-size:medium; color: black;"> &nbsp; &nbsp; Hora Triage: </label>
-										<input style="margin-left:100px !important; border: 0;background: #e6e6e6 !important; position:relative;" id="horaTriage" name="horaTriage" type="text"></b>
+										<input disabled style="margin-left:100px !important; border: 0;background: #e6e6e6 !important; position:relative;" id="horaTriage" name="horaTriage" type="text"></b>
 									</tr>
 										<tr>
 											<td colspan="5" style="color:black; font-size:large;border: none"><label><b> Signos Vitales </b></label>
@@ -196,7 +196,7 @@
 									<tr>
 										<td style="border: none">
 											<label class="control-label col-md-2" style="width: 5em; color:black; font-size:large; color: black;"  for="alergias"> Alergias </label>
-											<textarea class="textareaResize " style="width: 51%; color:white !important;" id="alergias" name="alergias" rows="3" cols="3" disabled></textarea>
+											<textarea class="textareaResize " style="width: 51%; color:black !important;" id="alergias" name="alergias" rows="3" cols="3" disabled></textarea>
 										</td>									
 									</tr>
 									<tr>
@@ -446,13 +446,14 @@
 													<label for="sospDiagnostica" style="font-size: medium; font-weight:600"> Sospecha Diagnóstica (*) </label>
 													<textarea style="width: 31em;" class="form-control textareaResize " maxlength="700" id="sospDiagnostica" name="sospDiagnostica" rows="2" cols="2"></textarea>
 													<p id="numSospDiag">0/700</p>
-												</td>
+												</td> 
 											</tr>
 											<tr>
 												<td style="border: none">
 													<label><input type="checkbox" id="GES" name="GES" ><span style="font-size: medium; font-weight:600"> Notificación GES </span></label><br>
 													<label  for="diagnosGes" style="font-size: medium; font-weight:600"> Diagnóstico GES</label>
 													<select class="form-control" style="width: 20em; display: inline-block;" id="diagnosGes" name="diagnosGes">
+
 													</select>
 												</td>
 											</tr>

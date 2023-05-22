@@ -24,6 +24,10 @@
 	<script src="../controlador/cliente/altaEgresoController.js?id=97"></script>
 	<script src="js/navAltaEgreso.js?id=97"></script>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">	
+
+		
+
+
 		<script type="text/javascript">
 			function deshabilitaRetroceso(){ 
 			    window.location.hash="no-back-button";
@@ -59,8 +63,8 @@
 							<table class="table table-bordered">
 								<tr>
 									<td >
-										<label for="nombrePaci"> Nombre Paciente: </label>
-										<span id="nombrePaci" name="nombrePaci"></span>
+										<label for="nombrePaci" style="color:black; font-size:medium; font-weight:bold"> Nombre Paciente: </label>
+										<span style="color:black; font-size:medium;" id="nombrePaci" name="nombrePaci"></span>
 										<span class="position-relative" style="display: inline-block;position: relative;">
 											<div id="mostrarMas" class="more d-flex justify-content-center align-items-center p-2" style="background: #900;border-radius: 14px;color: white;width: 25px;height: 25px;display: flex;justify-content: center;align-items: center;" data-toggle="tooltip" data-placement="bottom" title="Click para ver mas">
 												<span class="fa fa-fw fa-info " ></span>	
@@ -93,27 +97,27 @@
 										</span>
 									</td>
 									<td>
-										<label for="sexo"> Sexo: </label>
-										<span id="sexo"></span>
+										<label style="color:black; font-size:medium; font-weight:bold" for="sexo"> Sexo: </label>
+										<span style="color:black; font-size:medium;" id="sexo"></span>
 									</td>
 									<td>
-										<label for="edadPac"> Edad: </label>
+										<label  style="color:black; font-size:medium; font-weight:bold" for="edadPac"> Edad: </label>
 										<input  id="fnac" name="fnac" type="hidden" disabled="">
-										<span id="edadPac"></span>
+										<span style="color:black; font-size:medium;" id="edadPac"></span>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<label for="fechIngreso"> Hora de Admisión: </label>
-										<span id="fechIngreso"></span>
+										<label style="color:black; font-size:medium; font-weight:bold" for="fechIngreso"> Hora de Admisión: </label>
+										<span style="color:black; font-size:medium;" id="fechIngreso"></span>
 									</td>
 									<td>
-										<label for="tipoConsulta"> Tipo de Consulta: </label>
-										<span id="tipoConsulta"></span>
+										<label style="color:black; font-size:medium; font-weight:bold" for="tipoConsulta"> Tipo de Consulta: </label>
+										<span style="color:black; font-size:medium;" id="tipoConsulta"></span>
 									</td>
 									<td>
-										<label  for="motivoConsulta"> Motivo de Consulta: </label>
-										<span id="motivoConsulta"></span>
+										<label style="color:black; font-size:medium; font-weight:bold"  for="motivoConsulta"> Motivo de Consulta: </label>
+										<span style="color:black; font-size:medium;" id="motivoConsulta"></span>
 									</td>
 								</tr>
 							</table>
@@ -121,37 +125,37 @@
 						<!-- FIN DATOS PACIENTE -->						
 
 						<!-- INICIO DATOS TRIAGE -->
-						<div class="form-horizontal" style="margin-top: 6px;background: #e6e6e6;display: -webkit-inline-box;border: 2px solid;width: 100%;">
+						<div class="form-horizontal" style="margin-top: 6px;background: #f9f9f9;display: -webkit-inline-box;border: 2px solid;width: 100%;">
 							<div class="col-md-6">
-								<table class="table table-bordered" style="width: 81%;">
-									<tr><label><b>Triage Paciente</b></label></tr>
+								<table class="table table-bordered"style="width: 81%;background-color:#f9f9f9;">
+									<tr><label><b style="color:black; font-size:large;">Triage Paciente</b></label></tr>
 										<tr>
-											<td colspan="5" style="border: none"><label><b> Signos Vitales </b></label>
-												<label><b style="color: black;"> &nbsp; &nbsp; Hora Triage: </label>
-												<input style="border: 0;background: #e6e6e6 !important;" id="horaTriage" name="horaTriage" type="text"></b>
+											<td colspan="5" style="color:black; font-size:large;border: none"><label><b> Signos Vitales </b></label>
+												<label><b style="margin-left:300px !important; color:black; font-size:medium; color: black;"> &nbsp; &nbsp; Hora Triage: </label>
+												<input disabled style="margin-left:100px !important; border: 0;background: #e6e6e6 !important; position:relative;" id="horaTriage" name="horaTriage" type="text"></b>
 											</td>
 										</tr>
 									<tr>
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label> F.C : </label>
 											<input style="width: 3em;" id="fc" name="fc" type="text" disabled>
 										</td>
 
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label for="fr"> F.R: </label>
 											<input style="width: 3em;" id="fr" name="fr" type="text" disabled>
 										</td>
 
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label for="tempAx"> Tº AX: </label>
 											<input style="width: 3em;" id="tempAx" name="tempAx" type="text"disabled >
 										</td>
 
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label for="satO"> SAT O2:</label>
 											<input style="width: 3em;" id="satO" name="satO" type="text" disabled>
 										</td>
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label for="ps"> P.A : </label>
 											<input style="width: 3em;" id="ps" name="ps" type="text" disabled> /
 											<input style="width: 3em;" id="pd" name="pd" type="text" disabled>
@@ -160,20 +164,20 @@
 									<tr>
 										
 										
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label for="hgt"> HGT: </label>
 											<input style="width: 3em;" id="hgt" name="hgt" type="text" disabled>
 										</td>
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label for="eEva"> E. EVA : </label>
 											<input style="width: 3em;" id="eEva" name="eEva" type="text" disabled>
 										</td>
 
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label> E GLASGOW: </label>
 											<input style="width: 3em;" id="eglasgow" name="eglasgow" type="text" disabled>
 										</td>
-										<td style="border: none">
+										<td style="border: none; color:black">
 											<label> PESO : </label>
 											<input style="width: 4em;" id="peso" name="peso"  type="text" maxlength="5" disabled>
 										</td>
@@ -185,36 +189,36 @@
 							</div>
 							<div class="col-md-6">
 								<table class="table table-bordered" id="antecedentesMorbidos">
-									<tr><td style="border: none"><label><b> Antecedente Mórbidos </b></label></td></tr>
+									<tr><td style="color:black; font-size:large;border: none"><label><b> Antecedente Mórbidos </b></label></td></tr>
 									<tr>
 										<td style="border: none">
 											<div class="col-md-12">
-												<label><input type="checkbox" disabled id="HTA" name="HTA" ><span> HTA </span></label>
-												<label><input type="checkbox" disabled id="DM2" name="DM2" ><span> DM2 </span></label>
-												<label><input type="checkbox" disabled id="EPOC" name="EPOC" ><span> EPOC </span></label>
-												<label><input type="checkbox" disabled id="ASMA" name="ASMA" ><span> ASMA </span></label>
-												<label><input type="checkbox" disabled id="IRC" name="IRC" ><span> IRC </span></label>
-												<label><input type="checkbox" disabled id="DHC" name="DHC" ><span> DHC </span></label>
-												<label><input type="checkbox" disabled id="OTRAS" name="OTRAS" ><span> OTRAS EC </span></label>
+												<label><input type="checkbox" disabled id="HTA" name="HTA" ><span style=" color:black !important"> HTA </span></label>
+												<label><input type="checkbox" disabled id="DM2" name="DM2" ><span style=" color:black !important"> DM2 </span></label>
+												<label><input type="checkbox" disabled id="EPOC" name="EPOC" ><span style=" color:black !important"> EPOC </span></label>
+												<label><input type="checkbox" disabled id="ASMA" name="ASMA" ><span style=" color:black !important"> ASMA </span></label>
+												<label><input type="checkbox" disabled id="IRC" name="IRC" ><span style=" color:black !important"> IRC </span></label>
+												<label><input type="checkbox" disabled id="DHC" name="DHC" ><span style=" color:black !important"> DHC </span></label>
+												<label><input type="checkbox" disabled id="OTRAS" name="OTRAS" ><span style=" color:black !important"> OTRAS EC </span></label>
 												<label><input  id="otrosEcDescrip" disabled style="width: 9em;" name="otrosEcDescrip" type="text"></label>
 											</div>
 										</td>
 									</tr>
 									<tr>
 										<td style="border: none">
-											<label class="control-label col-md-2" style="width: 5em;"  for="alergias"> Alergias </label>
+											<label class="control-label col-md-2" style="width: 5em; color:black; font-size:large; color: black;"  for="alergias"> Alergias </label>
 											<textarea class="textareaResize " style="width: 51%;" id="alergias" name="alergias" rows="3" cols="3" disabled></textarea>
 										</td>									
 									</tr>
 									<tr>
 										<td style="border: none">
-											<label class="control-label col-md-2">Categorización</label>
+											<label style="color:black; font-size:large;" class="control-label col-md-2">Categorización</label>
 											<div class="col-md-10">
-												<label><input checked="" name="categorizacion" disabled  type="radio" id="C1" value="C1"><span> C 1</span></label>
-												<label><input name="categorizacion" disabled type="radio" id="C2" value="C2"><span> C 2 </span></label>
-												<label><input name="categorizacion" disabled type="radio" id="C3" value="C3"><span> C 3</span></label>
-												<label><input name="categorizacion" disabled type="radio" id="C4" value="C4"><span> C 4 </span></label>
-												<label><input name="categorizacion" disabled type="radio" id="C5" value="C5"><span> C 5 </span></label>
+												<label><input checked="" name="categorizacion" disabled  type="radio" id="C1" value="C1"><span style="color:black; font-size:medium;"> C 1</span></label>
+												<label><input name="categorizacion" disabled type="radio" id="C2" value="C2"><span style="color:black; font-size:medium;"> C 2 </span></label>
+												<label><input name="categorizacion" disabled type="radio" id="C3" value="C3"><span style="color:black; font-size:medium;"> C 3</span></label>
+												<label><input name="categorizacion" disabled type="radio" id="C4" value="C4"><span style="color:black; font-size:medium;"> C 4 </span></label>
+												<label><input name="categorizacion" disabled type="radio" id="C5" value="C5"><span style="color:black; font-size:medium;"> C 5 </span></label>
 											</div>
 										</td>
 									</tr>
@@ -227,12 +231,12 @@
 						<!-- FIN DATOS TRIAGE -->
 						<br>
 						<br>
-						<label><h4><b> Atención Médica </b></h4></label>
-						<label>&nbsp; Hora:&nbsp; &nbsp;<input id="horaAtencion" name="horaAtencion" type="text" disabled></label>
+						<label><h4><b style=" font-size:x-large!important;"> Atención Médica </b></h4></label>
+						<label style="font-size:large!important;">&nbsp; Hora:&nbsp; &nbsp;<input id="horaAtencion" name="horaAtencion" type="text" disabled></label>
 						<!-- INICIO ATENCION MEDICA -->
 						<div class="form-horizontal">
 
-							<div class="form-group">
+							<div style=" font-size:large!important; color:black;" class="form-group">
 								Requiere llenar constatación de lesiones (*)
 								<label class="radio-inline requiereConst" style="margin-top: -1% !important;"><input name="requiereConstLesion" id="requiereConstLesionSi" disabled type="radio" value="1"><span> Si </span></label>
 								<label class="radio-inline requiereConst" style="margin-top: -1% !important;"><input name="requiereConstLesion" id="requiereConstLesionNo" disabled type="radio" value="0"><span> No </span></label>
@@ -242,45 +246,45 @@
 							<div class="col-md-6" id="constatacionDeLesionesUno">
 								<table class="table table-bordered" style="border:1px solid black;width:100% !important;border-radius:5px;">
 									<tr>
-			                            <td colspan="3">  Método del Diagnóstico</td>
+			                            <td colspan="3" style="font-size:x-large; color:black;">  Método del Diagnóstico</td>
 			                        </tr>
 			                        <tr>
 			                            <td colspan="3">
-			                                <label><input type="checkbox" disabled="true" id="examenFisicoConst" name="examenFisicoConst"><span> Examen Físico </span></label>
-											<label><input type="checkbox" disabled="true" id="imagenConst" name="imagenConst"><span> Imagenología </span></label>
-											<label><input type="checkbox" disabled="true" id="exLabConst" name="exLabConst"><span> Exámenes de Laboratorio</span></label>
-											<label><input type="checkbox" disabled="true" id="otrosConst" name="otrosConst"><span> Otros </span></label>
+			                                <label><input type="checkbox" disabled="true" id="examenFisicoConst" name="examenFisicoConst"><span style="font-size:large;"> Examen Físico </span></label>
+											<label><input type="checkbox" disabled="true" id="imagenConst" name="imagenConst"><span style="font-size:large;"> Imagenología </span></label>
+											<label><input type="checkbox" disabled="true" id="exLabConst" name="exLabConst"><span style="font-size:large;"> Exámenes de Laboratorio</span></label>
+											<label><input type="checkbox" disabled="true" id="otrosConst" name="otrosConst"><span style="font-size:large;"> Otros </span></label>
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td colspan="3">  Describir brevemente origen de la lesión : </td>
+			                            <td colspan="3"></td>
 			                        </tr>
 			                        <tr>
 			                            <td colspan="3"> 
-			                            	<label for="origenLesionRelatoLesionado"> Según relato lesionado </label>
+			                            	<label for="origenLesionRelatoLesionado" style="font-size: medium; font-weight:600"> Describir brevemente origen de la lesión (Según relato lesionado) </label>
 											<textarea style="width: 31em;" class="form-control textareaResize " maxlength="700" id="origenLesionRelatoLesionado" name="origenLesionRelatoLesionado" rows="2" cols="2" disabled></textarea>
 											<br>
 			                            </td>
 			                        </tr>
 			                        <tr>
 			                            <td colspan="3">
-			                            	<label for="origenLesionClinica"> Según relato apreciación clínica (Ej. : Caída de altura, objeto contundente. No puede el medico certificar la intencionalidad de <br>
+			                            	<label for="origenLesionClinica" style="font-size: medium; font-weight:600"> Según relato apreciación clínica (Ej. : Caída de altura, objeto contundente. No puede el medico certificar la intencionalidad de <br>
 			                            	la caída ni referenciar entre contundentes causantes: palo, piedra, manopla, etc.) </label>
 											<textarea style="width: 31em;" class="form-control textareaResize " maxlength="700" id="origenLesionClinica" name="origenLesionClinica" rows="2" cols="2" disabled></textarea>
 											<br>
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                        	<td colspan="3">
+			                        	<td colspan="3" style="font-size: medium; font-weight:600"> 
 			                        		 Lesiones que ocasionarán al lesionado enfermedad y/o incapacidad para el trabajo por <input id="diasLesion" name="diasLesion" style="width: 3em;" maxlength="3" type="text" disabled > días.
 			                        		<br>
-			                                <label style="font-size: 13px;">
+			                                <label style="font-size: 13px;" style="font-size: medium; font-weight:500; color:black;">
 			                                   Si el examinado es un niño, o una persona que no trabaja se considera el tiempo que tarde en poder realizar una actividad normal para su edad o para su condición previa al momento de ser lesionado.
 			                                </label>
 			                        	</td>
 			                        </tr>
 			                        <tr>
-			                        	<td colspan="3">  Diagnóstico Medico Legal de las lesiones: 
+			                        	<td colspan="3" style="font-size: medium; font-weight:600">  Diagnóstico Medico Legal de las lesiones: 
 			                        		<select id="pronMedicoLegal" name="pronMedicoLegal" disabled>
 											</select>
 										</td>
@@ -291,34 +295,34 @@
 							<div class="col-md-6" id="constatacionDeLesionesDos">
 								<table class="table table-bordered" style="border:1px solid black;width:100% !important;border-radius:5px;">
 									<tr>
-			                            <td colspan="3">  Lesionado viene acompañado:</td>
+			                            <td colspan="3" style="border:1px solid black;width:100% !important;border-radius:5px;">  Lesionado viene acompañado:</td>
 			                        </tr>
 			                        <tr>
 			                            <td colspan="3">
 											<label class="radio-inline examenFisico" style="margin-top: -1% !important;">
-												<input disabled name="vieneAcompanado" id="vieneAcompanadoSi" type="radio" value="1"><span> Si </span>
+												<input disabled name="vieneAcompanado" id="vieneAcompanadoSi" type="radio" value="1"><span style="font-size: medium; font-weight:600"> Si </span>
 											</label>
 											<label class="radio-inline examenFisico" style="margin-top: -1% !important;">
-												<input disabled name="vieneAcompanado" id="vieneAcompanadoNo" type="radio" value="0"><span> No </span>
+												<input disabled name="vieneAcompanado" id="vieneAcompanadoNo" type="radio" value="0"><span style="font-size: medium; font-weight:600"> No </span>
 											</label>
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td colspan="3"> Identificación persona que acompaña al lesionado: </td>
+			                            <td colspan="3" style="font-size: medium; font-weight:600"> Identificación persona que acompaña al lesionado: </td>
 			                        </tr>
 			                        <tr>
 			                            <td colspan="3"> 
-			                            	<label for="nombreAcompLesionado"> Nombre : &nbsp;</label>
+			                            	<label for="nombreAcompLesionado" style="font-size: medium; font-weight:600"> Nombre : &nbsp;</label>
 											<input style="width: 30em;" id="nombreAcompLesionado" name="nombreAcompLesionado" disabled type="text">
 			                            </td>
 			                        </tr>
 			                        <tr>
 			                            <td colspan="3"> 
-			                            	<label for="CalidadAcompLesionado"> Calidad : </label>
-											<input style="width: 30em;" id="CalidadAcompLesionado" name="CalidadAcompLesionado" disabled type="text">
+										<label for="CalidadAcompLesionado" style="font-size: medium; font-weight:600"> Calidad&nbsp;&nbsp;:&nbsp;&nbsp;  </label>
+											<input style="width: 30em;" id="CalidadAcompLesionado" placeholder="(Pariente, funcionario de carabineros, ambulancia, vecino, etc.)" disabled name="CalidadAcompLesionado" type="text">
 			                            </td>
 			                        </tr>
-									<tr><td>(Pariente, funcionario de carabineros, ambulancia, vecino, etc.)</td></tr>
+									<tr><td></td></tr>
 			                        
 								</table>
 							<br><br>
@@ -329,8 +333,8 @@
 								<table class="table table-bordered" >
 									<tr>
 										<td style="border: none">
-											<label><input type="checkbox" id="Alcoholemia" name="Alcoholemia" disabled ><span> Alcoholemia </span></label>
-											<label>&nbsp; &nbsp; Nº Frasco </label>
+											<label><input type="checkbox" id="Alcoholemia" name="Alcoholemia" disabled ><span style="font-size: medium; font-weight:600"> Alcoholemia </span></label>
+											<label style="width: 7em;border: 1px solid #ccc !important;font-size: medium; font-weight:600 ">&nbsp; &nbsp; Nº Frasco </label>
 											<input id="nFrasco" name="nFrasco" style="width: 7em;" maxlength="18" type="text" disabled >
 										</td>
 										<td style="border: none;width: 37%;">												
@@ -338,7 +342,7 @@
 									</tr>
 									<tr>
 										<td style="border: none;">
-											<label> Anamnesis (*) &nbsp; &nbsp;</label>
+											<label style="font-size: medium; font-weight:600"> Anamnesis (*) &nbsp; &nbsp;</label>
 											<textarea class="textareaResize " style="width: 51%;" id="Anamnesis" name="Anamnesis" rows="3" cols="3" maxlength="900"></textarea>
 											<br>
 										</td>
@@ -355,7 +359,7 @@
 									<table class="table table-bordered" style="width: 95%;">
 										<tbody>
 											<tr>
-												<td style="border: none"><label><h4><b> Examen Físico </b></h4></label></td>
+												<td style="border: none"><label><h4><b style="font-size: medium; font-weight:600"> Examen Físico </b></h4></label></td>
 											</tr>
 											<tr>
 												<td>
@@ -364,7 +368,7 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-												<label class="control-label col-md-2"> Cabeza (*) </label>
+												<label class="control-label col-md-2" style="font-size: medium; font-weight:600"> Cabeza (*) </label>
 												<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="cabeza" type="radio" value="SI" id="Normal1"><span>SI </span></label>
 												<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="cabeza" type="radio" id="Anormal1" value="NO"><span> NO </span></label>
 												<label>
@@ -377,7 +381,7 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label class="control-label col-md-2"> Tórax (*) </label>
+													<label class="control-label col-md-2" style="font-size: medium; font-weight:600"> Tórax (*) </label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="torax" type="radio" value="SI" id="Normal2"><span>SI </span></label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="torax" type="radio" id="Anormal2" value="NO"><span> NO </span></label>
 													<label>
@@ -390,7 +394,7 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label class="control-label col-md-2"> Abdomen (*) </label>
+													<label class="control-label col-md-2" style="font-size: medium; font-weight:600"> Abdomen (*) </label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="abdomen" type="radio" value="SI" id="Normal3"><span>SI </span></label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="abdomen" type="radio" id="Anormal3" value="NO"><span> NO </span></label>
 													<label>
@@ -403,7 +407,7 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label class="control-label col-md-2"> Pelvis (*) </label>
+													<label class="control-label col-md-2" style="font-size: medium; font-weight:600"> Pelvis (*) </label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="pelvis" type="radio" value="SI" id="Normal4"><span>SI </span></label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="pelvis" type="radio" id="Anormal4" value="NO"><span> NO </span></label>
 													<label>
@@ -416,7 +420,7 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label class="control-label col-md-2"> Ext. Superiores (*) </label>
+													<label class="control-label col-md-2" style="font-size: medium; font-weight:600"> Ext. Superiores (*) </label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="extSuperiores" type="radio" value="SI" id="Normal5"><span>SI </span></label>
 													<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="extSuperiores" type="radio" id="Anormal5" value="NO"><span> NO</span></label>
 													<label>
@@ -429,7 +433,7 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label class="control-label col-md-2"> Ext. Inferiores (*) </label>
+													<label class="control-label col-md-2" style="font-size: medium; font-weight:600"> Ext. Inferiores (*) </label>
 												<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="extInferiores" type="radio" value="SI" id="Normal6"><span>SI </span></label>
 												<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="extInferiores" type="radio" id="Anormal6" value="NO"><span> NO </span></label>
 												<label>
@@ -442,7 +446,7 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label class="control-label col-md-2"> Ex. Neurológico (*) </label>
+													<label class="control-label col-md-2" style="font-size: medium; font-weight:600"> Ex. Neurológico (*) </label>
 												<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="exNeurologico" type="radio" value="SI" id="Normal7"><span>SI </span></label>
 												<label class="radio-inline examenFisico Margen" style="margin-top: -12% !important;"><input name="exNeurologico" type="radio" value="NO" id="Anormal7"><span> NO </span></label>
 												<label>
@@ -463,35 +467,36 @@
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label><input type="checkbox" id="GES" name="GES" disabled ><span> Notificación GES </span></label><br>
-													<label  for="diagnosGes"> Diagnóstico GES</label>
-													<select class="form-control" style="width: 20em; display: inline-block;" id="diagnosGes" name="diagnosGes" disabled>
+												<label><input disabled type="checkbox" id="GES" name="GES" ><span style="font-size: medium; font-weight:600" > Notificación GES </span></label><br>
+													<label  for="diagnosGes" style="font-size: medium; font-weight:600"> Diagnóstico GES</label>
+													<select disabled class="form-control" style="width: 20em; display: inline-block;" id="diagnosGes" name="diagnosGes">
+
 													</select>
 												</td>
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label for="diagnostico"> Diagnóstico  de egreso (*) </label>
+													<label for="diagnostico" style="font-size: medium; font-weight:600"> Diagnóstico  de egreso (*) </label>
 													<textarea style="width: 70%;" class="form-control textareaResize" maxlength="700" id="diagnostico" name="diagnostico" rows="2" cols="2"></textarea>
 													<p id="numDiagnostEgreso">0/700</p>
 												</td>
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label for="EvolucionObsMed"> Evolución y observaciones médicas </label>
+													<label for="EvolucionObsMed" style="font-size: medium; font-weight:600"> Evolución y observaciones médicas </label>
 													<textarea style="width: 70%;" class="form-control textareaResize" maxlength="700" id="EvolucionObsMed" name="EvolucionObsMed" rows="3" cols="3"></textarea>
 													<p id="numEvoluYObs">0/700</p>
 												</td>
 											</tr>
 											<tr>
 												<td style="border: none">
-													<label style="margin-left: 11.5em;">Agregue Resultado</label>
+													<label style="margin-left: 11.5em;" style="font-size: medium; font-weight:600">Agregue Resultado</label>
 												</td>
 											</tr>
 											<tr>
 												<td style="border: none">
 													<label><input type="checkbox" id="radiografia" name="radiografia" disabled >
-														<span> Radiografía <label id="NombreRadiografia"></label> </span>
+														<span style="font-size: medium; font-weight:600"> Radiografía <label id="NombreRadiografia"></label> </span>
 													</label>
 
 													<textarea style="width: 70%;" class="form-control textareaResize" maxlength="150" id="detRadio" name="detRadio" rows="1" cols="2"></textarea>
@@ -500,7 +505,7 @@
 											<tr>
 												<td style="border: none">
 													<label><input type="checkbox" id="ExamenSangre" name="ExamenSangre" disabled >
-														<span> Exámenes <label id="NombreExamen"></label></span>
+														<span style="font-size: medium; font-weight:600"> Exámenes <label id="NombreExamen"></label></span>
 													</label>
 													<textarea style="width: 70%;" class="form-control textareaResize" maxlength="150" id="detExSangre" name="detExSangre" rows="1" cols="2"></textarea>
 												</td>
@@ -508,7 +513,7 @@
 											<tr>
 												<td style="border: none">
 													<label><input type="checkbox" id="ecg" name="ecg" disabled>
-														<span> Resultado ECG </span>
+														<span style="font-size: medium; font-weight:600"> Resultado ECG </span>
 													</label>
 													<textarea style="width: 70%;" class="form-control textareaResize" maxlength="150" id="detECG" name="detECG" rows="1" cols="2"></textarea>
 												</td>
@@ -527,54 +532,54 @@
 										</tr>
 											<tr>
 												<td colspan="5" style="border: none">
-													<label><b> Signos Vitales al Egreso</b></label>
+													<label><b style="font-size: medium; font-weight:600"> Signos Vitales al Egreso</b></label>
 												</td>
 											</tr>
 										<tr>
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label> F.C : </label>
 												<input style="width: 3em;" maxlength="3" id="fcDos" name="fcDos" type="text">
 											</td>
 
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label for="fr"> F.R : </label>
 												<input style="width: 3em;" maxlength="3" id="frDos" name="frDos" type="text">
 											</td>
 
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label for="tempAx"> Tº AX : </label>
 												<input style="width: 3em;" maxlength="4" id="tempAxDos" name="tempAxDos" type="text" >
 											</td>
 
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label for="satO"> SAT O2 :</label>
 												<input style="width: 3em;" maxlength="3" id="satODos" name="satODos" type="text">
 											</td>
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label for="ps"> P.A : </label>
 												<input style="width: 3em;" maxlength="3" id="psDos" name="psDos" type="text"> /
 												<input style="width: 3em;"  maxlength="3"id="pdDos" name="pdDos" type="text">
 											</td>									
 										</tr>
 										<tr>
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label for="hgt"> HGT: </label>
 												<input style="width: 3em;" maxlength="4" id="hgtDos" name="hgtDos" type="text">
 											</td>
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label for="eEva"> E. EVA : </label>
 												<input style="width: 3em;" maxlength="2" id="eEvaDos" name="eEvaDos" type="text">
 											</td>
 
-											<td style="border: none">
+											<td style="border: none; color:black">
 												<label> E GLASGOW: </label>
 												<input style="width: 3em;" maxlength="2" id="eglasgowDos" name="eglasgowDos" type="text">
 											</td>
-											<td style="border: none"></td>
+											<td style="border: none; color:black"></td>
 										</tr>
 										<tr>
 											<th colspan="5" style="border: none">
-												<label for="EgresoInd"> Indicaciones y/o receta al egreso (*)</label>
+												<label for="EgresoInd" style="font-size: medium; font-weight:600"> Indicaciones y/o receta al egreso (*)</label>
 												<textarea style="width: 94%;" class="form-control textareaResize" id="EgresoInd" maxlength="700" name="EgresoInd" rows="4" cols="3"></textarea><p id="numEgresoInd">0/700</p>
 											</th> 
 										</tr>
@@ -585,14 +590,14 @@
 									<table class="table" style="width: 66%;">
 										<tr>
 											<td style="border: none">
-												<label  for="tipoAlta"> Tipo de Alta o Egreso (*)</label>
+												<label  for="tipoAlta" style="font-size: medium; font-weight:600"> Tipo de Alta o Egreso (*)</label>
 												<select class="form-control" id="tipoAlta" name="tipoAlta">
 												</select>
 											</td>
 										</tr>
 										<tr>
 											<td style="border: none" id="centroDeriv">
-												<label  for="centroDerivacion"> Centro Derivación (*)</label>
+												<label  for="centroDerivacion" style="font-size: medium; font-weight:600"> Centro Derivación (*)</label>
 												<select class="form-control" id="centroDerivacion" name="centroDerivacion">
 												</select>
 											</td>
@@ -600,39 +605,39 @@
 										<tr>
 											<td style="border: none" id="EspecialidadAtencion">
 												<div class="form-group">
-								                	<label for="especialidad">Especialidad</label>
+								                	<label for="especialidad" style="font-size: medium; font-weight:600">Especialidad</label>
 								                	<input class="form-control" id="especialidad" name="especialidad" type="text">
 								                </div>
 											</td>
 										</tr>
 										<tr>
-											<td id="seEnviaConsultaPara"> Se envía a consulta para <br>
-												<label><input type="checkbox" id="confirmacioDiagnostica" name="confirmacioDiagnostica" ><span> Confirmación Diagnóstica </span></label>
-												<label><input type="checkbox" id="realizarTto" name="realizarTto" ><span> Realizar tratamiento </span></label>
-												<label><input type="checkbox" id="Seguimiento" name="Seguimiento" ><span> Seguimiento </span></label>
-												<label><input type="checkbox" id="otraConsulta" name="otraConsulta" ><span> Otro </span></label>
+											<td id="seEnviaConsultaPara" style="font-size: medium; font-weight:600"> Se envía a consulta para <br>
+												<label><input type="checkbox" id="confirmacioDiagnostica" name="confirmacioDiagnostica" ><span style="color:black; font-size:medium; font-weight:bold"> Confirmación Diagnóstica </span></label>
+												<label><input type="checkbox" id="realizarTto" name="realizarTto" ><span style="color:black; font-size:medium; font-weight:bold"> Realizar tratamiento </span></label>
+												<label><input type="checkbox" id="Seguimiento" name="Seguimiento" ><span style="color:black; font-size:medium; font-weight:bold"> Seguimiento </span></label>
+												<label><input type="checkbox" id="otraConsulta" name="otraConsulta" ><span style="color:black; font-size:medium; font-weight:bold"> Otro </span></label>
 	                                            <br>	                                            
-	                                            <label for="consultaTextoEspecificar">Especifique :</label>
+	                                            <label for="consultaTextoEspecificar" style="font-size: medium; font-weight:600">Especifique :</label>
 	                                            <textarea style="width: 94%;" class="form-control textareaResize " id="consultaTextoEspecificar" maxlength="700" name="consultaTextoEspecificar" rows="4" cols="3"></textarea>
 												<p id="numconsultaTextoEspecificar">0/700</p>
 	                                        </td>
 										</tr>
 										<tr>
 											<td style="border: none">
-												<label for="grupoDiagnostico" class="control-label col-md-6" style="text-align: left;"> GRUPO DIAGNÓSTICO (DEIS) (*)</label>
+												<label for="grupoDiagnostico" class="control-label col-md-6" style="text-align: left; font-size: medium; font-weight:600;" > GRUPO DIAGNÓSTICO (DEIS) (*)</label>
 												<select class="form-control" id="grupoDiagnostico" name="grupoDiagnostico" required="">
 												</select>
-												<label style="color: red;"> (*) No Olvidar Seleccionar el diagnóstico del paciente</label>
+												<label style="font-weight: bold;color: #856404; background-color: #fff3cd; border-color: #ffeeba; margin-left: 9%; font-size: medium; font-weight:900"> (*) No Olvidar Seleccionar el diagnóstico del paciente</label>
 											</td>
 										</tr>
 										<tr>
 											<td style="border: none">
-												<label>(*) Categorización al Egreso</label>
-												<label class="Mostrar"><input name="CatFinal" type="radio" value="C1"><span> C 1</span></label>
-												<label class="Mostrar"><input name="CatFinal" type="radio" value="C2"><span> C 2 </span></label>
-												<label class="Mostrar"><input name="CatFinal" type="radio" value="C3"><span> C 3</span></label>
-												<label class="Mostrar"><input name="CatFinal" type="radio" value="C4"><span> C 4 </span></label>
-												<label class="Mostrar"><input name="CatFinal" type="radio" value="C5"><span> C 5 </span></label>
+												<label  style="text-align: left; font-size: medium; font-weight:600">(*) Categorización al Egreso</label>
+												<label class="Mostrar"><input name="CatFinal" type="radio" value="C1"><span style="font-size: medium; font-weight:600"> C 1</span></label>
+												<label class="Mostrar"><input name="CatFinal" type="radio" value="C2"><span style="font-size: medium; font-weight:600"> C 2 </span></label>
+												<label class="Mostrar"><input name="CatFinal" type="radio" value="C3"><span style="font-size: medium; font-weight:600"> C 3</span></label>
+												<label class="Mostrar"><input name="CatFinal" type="radio" value="C4"><span style="font-size: medium; font-weight:600"> C 4 </span></label>
+												<label class="Mostrar"><input name="CatFinal" type="radio" value="C5"><span style="font-size: medium; font-weight:600"> C 5 </span></label>
 											</td>
 										</tr>
 										<tr>
@@ -655,7 +660,7 @@
 							<div class="col-md-6">
 								<button style="background-color: grey !important; " type="button" class="btn btn-danger" id="volver"> Volver</button>
 								<!-- <button type="button" class="btn btn-danger" id="ingresarNsp"> Ingresar NSP</button>-->
-								<button style="background-color: #900 !important;"  type="button" class="btn btn-danger" id="ingresarNsp"> Cancelar Atención </button>
+								<button style="background-color: #900 !important;" type="button" class="btn btn-danger" id="ingresarNsp"> Cancelar Atención </button>
 							</div>
 							<div class="col-md-3">
 								<button type="button"  class="btn btn-danger" id="ingresarAtencion"> Guardar</button>
@@ -726,7 +731,7 @@
 											<div class="form-horizontal">
 												<div class="col-md-8"></div>
 												<div class="col-md-4">
-													<button type="button" class="btn btn-default" id="ingresarNspPac">Guardar Registro</button>
+													<button style="background-color: #016414 !important; " type="button" class="btn btn-default" id="ingresarNspPac">Guardar Registro</button>
 													<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
 												</div>
 											</div>

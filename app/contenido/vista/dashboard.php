@@ -293,7 +293,7 @@
 									</div>
 									<div class="form-group">
 										<label for="rutPac"> Rut Paciente (*) </label>
-										<input class="form-control " id="rutPac" name="rutPac" tabindex="1" oninput="checkRut(this)" placeholder="12345678-1" type="text" maxlength="10">
+										<input class="form-control " id="rutPac" name="rutPac" tabindex="1" oninput="checkRut(this)" placeholder="12345678-1" type="text" maxlength="11">
 										<label id="validateRutError" style="color: red;"></label>
 										<label id="validateRutOk" style="color: green;"></label>
 									</div>
